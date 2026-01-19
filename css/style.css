@@ -16,6 +16,14 @@ body {
     display: flex;
 }
 
+.section-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0;
+}
+
 .navbar {
     justify-content: space-between;
     align-items: center;
@@ -25,7 +33,7 @@ body {
 
 .navbar .brand {
     max-width: 220px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
     -webkit-text-stroke: 1px black;
 
@@ -61,8 +69,20 @@ body {
     background-image: linear-gradient(47.64deg, #f7e93f, #fb09b4, #9100f8);
     font-size: 1rem;
     font-weight: 600;
-    padding: 12px 16px;
+    padding: 12px 20px;
     border: none;
+    border-radius: 10000px;
+}
+
+.banner-info .btn-secondary {
+    width: 147px;
+    background: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00FF88;
+    padding: 12px 20px;
+    border: 1px solid #00FF88;
     border-radius: 10000px;
 }
 
@@ -83,33 +103,29 @@ body {
 }
 
 .banner-container {
-   
-    padding: 101px 525px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+
 
 }
 
 .mic-container {
-    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+
+
 }
-.mic-phone{
-    z-index:2;
-}
-.behind-mic{
-    width: 220px; /
-  margin-top:-20px; 
-  z-index: 1;
-}
+
+.mic-phone {}
+
+.behind-mic {}
 
 .badge {
     position: absolute;
-    top: -15px;
+
     background: linear-gradient(90deg, #ff5f6d, #ffc371);
     color: white;
     padding: 5px 12px;
@@ -117,6 +133,252 @@ body {
     font-weight: bold;
     font-size: 12px;
 }
+
+.banner-info .section-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.banner-info .section-article {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+
+}
+
+.banner-info .btn-primary {
+    color: #ffffff;
+}
+
+.twin-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+
+
+
+/* podcasts design */
+
+#podcasts {
+    background-color: #1a0b2e;
+    padding: 50px 200px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#banner .podcast-info {}
+
+.podcast-info .podcast-title {
+    margin-top: 0;
+    paading-top: 150px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.podcast-info .podcast-description {
+
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.podcast-rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.podcast-rating-container .rating h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #00FF88;
+    margin-bottom: 15px;
+
+}
+
+.podcast-rating-container .rating p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+
+}
+
+/* choose reason of TechWave */
+
+.choosen-reason {
+    padding: 120px 200px;
+    background-color: #230e3dfc;
+
+}
+
+.reason-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 225px);
+}
+
+.reason-container h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.reason-container p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.audio,
+.mobile,
+.global,
+.interview,
+.resource {
+    background-color: #35116566;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.audio {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.mobile,
+.global {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.interview {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.resource {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* featured episodes related design */
+
+.featured-episodes {
+    background-color: #1a0b2e;
+    padding: 120px 200px;
+}
+
+.featured-container {
+    display: flex;
+    gap: 25px;
+}
+
+.featured-container .featured-video {
+    width: 380px;
+    border: none;
+    border-radius: 24px;
+    background-color: #35116566;
+    font-size: 1em;
+
+}
+
+.featured-video iframe {
+    width: 100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.featured-video h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 24px;
+    margin-bottom: 0;
+}
+
+.featured-video p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 0 24px 0 24px;
+    margin-top: 0;
+
+}
+
+.featured-video .clock {
+    padding: 24px;
+    color: #00FF88;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.clock img {
+    width: auto;
+    margin-right: 5px;
+}
+
+
+/* host related design */
+
+.the-host, .section-heading{
+    padding-top:100px;
+    
+}
+.host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #35116566;
+    border: none;
+    border-radius: 40px;
+}
+.host .host-info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.host img{
+    padding-right: 24px;
+}
+.host-info h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.host-info p{
+    
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.icon img{
+   
+    padding:10px;
+    margin-right: 8px;
+    box-sizing: border-box;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
 
 
 
