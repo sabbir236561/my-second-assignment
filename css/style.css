@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body {
+    margin: 0 auto;
+}
+
+
+/* shared styles */
+.display-flex {
+    display: flex;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A0B2E;
+    padding: 16px 200px;
+}
+
+.navbar .brand {
+    max-width: 220px;
+    font-size: 2rem;
+    color: white;
+    -webkit-text-stroke: 1px black;
+
+}
+
+.brand .banner-wave {
+    background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar .menu .nav-items {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.menu .nav-items {
+    margin-right: 32px;
+}
+
+.menu .nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-image: linear-gradient(47.64deg, #f7e93f, #fb09b4, #9100f8);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10000px;
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#banner {
+    width: 100%;
+    background: url("../images/hero-bg.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-container {
+   
+    padding: 101px 525px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mic-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mic-phone{
+    z-index:2;
+}
+.behind-mic{
+    width: 220px; /
+  margin-top:-20px; 
+  z-index: 1;
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    background: linear-gradient(90deg, #ff5f6d, #ffc371);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-wrapper {
+    text-align: center;
+    background: url("../images/footer-bg.png");
+
+
+}
