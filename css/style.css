@@ -58,8 +58,8 @@ body {
 
 }
 
-.display-none{
-    display:none;
+.display-none {
+    display: none;
 }
 
 .menu .nav-items {
@@ -73,7 +73,8 @@ body {
     font-weight: 500;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primer {
     background-image: linear-gradient(47.64deg, #f7e93f, #fb09b4, #9100f8);
     font-size: 1rem;
     font-weight: 600;
@@ -101,7 +102,12 @@ body {
 .btn-primary:hover {
     width: 200px;
     transform: rotate(360deg) scale(1);
-    background-color: green;
+
+}
+
+.btn-primer:hover {
+    width: 200px;
+    transform: rotate(360deg) scale(1);
 }
 
 .btn-secondary:hover {
@@ -125,7 +131,7 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url("../images/hero-bg.png");
-    background-position: bottom;
+      background-position: bottom;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +168,7 @@ body {
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
     color: #1A0B2E;
     padding: 8px 16px;
-    right: 600px;
+    right: 590px;
     border-radius: 10000px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -208,7 +214,7 @@ body {
 
 .podcast-info .podcast-title {
     margin-top: 0;
-    padding-top:  50px;
+    padding-top: 50px;
     font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
@@ -420,6 +426,7 @@ body {
     -webkit-text-stroke: 1px none;
     margin: 0;
     padding-top: 70px;
+    
 
 }
 
@@ -432,6 +439,7 @@ body {
 
 .footer-wrapper .icon {
     margin-bottom: 32px;
+    
 }
 
 .icon img {
@@ -457,121 +465,138 @@ body {
 
 @media screen and (max-width:576px) {
 
-    .display-none{
-        display:flex;
+    .display-none {
+        display: flex;
         justify-content: space-between;
     }
-    .navbar{
+
+    .navbar {
         padding: 0 20px;
         display: flex;
         justify-content: space-between;
     }
-    
-    .menu, .btn-primary{
-        display:none;
-      
-    }
-    /* banner design */
-    #banner{
-        width: 100%;
-        background-image: url("../images/hero-bg.png");
-        background-repeat: no-repeat;
-    }
-    
-    .badge{
-        right: 130px;
-    }
-    /* podcasts design */
-    #podcasts{
-        padding: 0 20px;
-    }
-    .podcast-info .podcast-title{
-        font-size: 2rem;
-        
-        text-align: center;
-    }
-    .podcast-info .podcast-description{
-        font-weight: 0.5rem;
-        max-width: 400px;
-        padding-left: 80px;
-        text-align: center;
+
+    .menu,
+    .btn-primary {
+        display: none;
 
     }
-    hr{
-        padding:o 20px;
-        width: 500px;
-    }
-    .podcast-rating-container {
-        display:grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    /* choose reason related style*/
-    .chosen-reason{
-        padding: 0 20px 40px 20px;
+
+    /* banner design */
+    #banner {
+        margin-top: 0;
+        width: 100%;
+        background-image: url("../images/hero-bg.png");
         
     }
-    .chosen-reason h2{
+
+    .badge {
+        right: 130px;
+    }
+
+    /* podcasts design */
+    #podcasts {
+        padding: 0 20px;
+    }
+
+    .podcast-info .podcast-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .podcast-info .podcast-description {
+        font-weight: 0.5rem;
+        max-width: 400px;
+        padding-left: 65px;
+        text-align: center;
+    }
+
+    hr {
+        padding: o 20px;
+        width: 500px;
+    }
+
+    .podcast-rating-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* choose reason related style*/
+    .chosen-reason {
+        padding: 0 20px 40px 20px;
+
+    }
+
+    .chosen-reason h2 {
         font-size: 2rem;
         padding-top: 40px;
         margin-top: 0;
     }
-    .reason-container{
-               display: grid;
+
+    .reason-container {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(5, 250px);
     }
+
     /* featured episodes related design */
-   .featured-episodes{
-    padding: 0;
-   }
-   .featured-episodes, .section-heading{
-    padding-top: 40px;
-   }
-   .featured-container{
-    display: flex;
-    flex-direction: column;
-       align-items: center;
-   }
-   .the-host{
-    padding: 0 20px 40px 20px;
-   
+    .featured-episodes {
+        padding: 0;
+    }
 
-   }
-   .host{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-   }
+    .featured-episodes,
+    .section-heading {
+        padding-top: 40px;
+    }
 
-   /* footer related style */
+    .featured-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-   .footer-wrapper {
+    .the-host {
+        padding: 0 20px 40px 20px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    background-image: url("../images/footer-bg.png" );
-    background-position:center ;
-    
-   
+
+    }
+
+    .host {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* footer related style */
+
+    .footer-wrapper {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-image: url("../images/footer-bg.png");
+        background-position: center;
+
+    }
+
+    .footer-heading {
+        font-size: 3rem;
+    }
+
+
 }
-.footer-heading {
-    font-size: 3rem;
-} 
-
-
-}
-
-    
-    
-
-    
-
-    
 
 
 
-                                                     /* THE END */
+
+
+
+
+
+
+
+/* THE END */
