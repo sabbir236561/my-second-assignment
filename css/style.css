@@ -474,7 +474,6 @@ body {
         margin-top: 0;
         width: 100%;
         background-image: url("../images/hero-bg.png");
-
     }
 
     .badge {
@@ -494,12 +493,11 @@ body {
     .podcast-info .podcast-description {
         font-weight: 0.5rem;
         max-width: 400px;
-        padding-left: 65px;
+        padding-left: 50px;
         text-align: center;
     }
 
     hr {
-        padding: o 20px;
         width: 500px;
     }
 
