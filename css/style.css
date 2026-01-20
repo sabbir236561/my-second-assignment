@@ -6,6 +6,7 @@
     font-optical-sizing: auto;
 }
 
+
 body {
     margin: 0 auto;
 }
@@ -24,7 +25,10 @@ body {
     margin-top: 0;
 }
 
+/* navbar related style */
+
 .navbar {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1A0B2E;
@@ -52,6 +56,10 @@ body {
     justify-content: center;
 
 
+}
+
+.display-none{
+    display:none;
 }
 
 .menu .nav-items {
@@ -90,15 +98,16 @@ body {
     transition: transform 3s;
 }
 
-  .btn-primary:hover {
+.btn-primary:hover {
     width: 200px;
-    transform: rotate(360deg) scale(1) ;
+    transform: rotate(360deg) scale(1);
     background-color: green;
 }
-  .btn-secondary:hover {
+
+.btn-secondary:hover {
     width: 200px;
-    transform: rotate(360deg) scale(1) ;
-    
+    transform: rotate(360deg) scale(1);
+
 }
 
 .twin-button img {
@@ -109,6 +118,8 @@ body {
     text-decoration: none;
     color: #ffffff;
 }
+
+/* banner related style */
 
 #banner {
     width: 100%;
@@ -151,7 +162,7 @@ body {
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
     color: #1A0B2E;
     padding: 8px 16px;
-    right: 570px;
+    right: 600px;
     border-radius: 10000px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -195,18 +206,15 @@ body {
     text-align: center;
 }
 
-#banner .podcast-info {}
-
 .podcast-info .podcast-title {
     margin-top: 0;
-    paading-top: 150px;
+    padding-top:  50px;
     font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
 }
 
 .podcast-info .podcast-description {
-
     text-align: center;
     color: #ffffff;
     font-size: 1rem;
@@ -224,22 +232,19 @@ body {
     font-weight: 900;
     color: #00FF88;
     margin-bottom: 15px;
-
 }
 
 .podcast-rating-container .rating p {
     font-size: 1rem;
     font-weight: 400;
     color: #FFFFFF;
-
 }
 
-/* choose reason of TechWave */
+/* choose reason of TechWave related style */
 
-.choosen-reason {
+.chosen-reason {
     padding: 120px 200px;
     background-color: #230e3dfc;
-
 }
 
 .reason-container {
@@ -310,7 +315,6 @@ body {
     border-radius: 24px;
     background-color: #35116566;
     font-size: 1em;
-
 }
 
 .featured-video iframe {
@@ -333,7 +337,6 @@ body {
     color: #ffffff;
     padding: 0 24px 0 24px;
     margin-top: 0;
-
 }
 
 .featured-video .clock {
@@ -341,7 +344,6 @@ body {
     color: #00FF88;
     font-size: 16px;
     font-weight: 600;
-
 }
 
 .clock img {
@@ -398,14 +400,12 @@ body {
     box-sizing: border-box;
     border: 1px solid #533C72;
     border-radius: 10px;
-
 }
 
 
 /* footer related styles */
 
 .footer-wrapper {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -443,9 +443,7 @@ body {
     text-decoration: none;
     color: #ffffff;
     margin-left: 25px;
-
 }
-
 
 .footer-wrapper p {
     margin-bottom: 0;
@@ -453,5 +451,127 @@ body {
     font-weight: 400;
     color: #FFFFFF;
     margin-bottom: 120px;
+}
+
+/* media query related style */
+
+@media screen and (max-width:576px) {
+
+    .display-none{
+        display:flex;
+        justify-content: space-between;
+    }
+    .navbar{
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .menu, .btn-primary{
+        display:none;
+      
+    }
+    /* banner design */
+    #banner{
+        width: 100%;
+        background-image: url("../images/hero-bg.png");
+        background-repeat: no-repeat;
+    }
+    
+    .badge{
+        right: 130px;
+    }
+    /* podcasts design */
+    #podcasts{
+        padding: 0 20px;
+    }
+    .podcast-info .podcast-title{
+        font-size: 2rem;
+        
+        text-align: center;
+    }
+    .podcast-info .podcast-description{
+        font-weight: 0.5rem;
+        max-width: 400px;
+        padding-left: 80px;
+        text-align: center;
+
+    }
+    hr{
+        padding:o 20px;
+        width: 500px;
+    }
+    .podcast-rating-container {
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* choose reason related style*/
+    .chosen-reason{
+        padding: 0 20px 40px 20px;
+        
+    }
+    .chosen-reason h2{
+        font-size: 2rem;
+        padding-top: 40px;
+        margin-top: 0;
+    }
+    .reason-container{
+               display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 250px);
+    }
+    /* featured episodes related design */
+   .featured-episodes{
+    padding: 0;
+   }
+   .featured-episodes, .section-heading{
+    padding-top: 40px;
+   }
+   .featured-container{
+    display: flex;
+    flex-direction: column;
+       align-items: center;
+   }
+   .the-host{
+    padding: 0 20px 40px 20px;
+   
+
+   }
+   .host{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+   }
+
+   /* footer related style */
+
+   .footer-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../images/footer-bg.png" );
+    background-position:center ;
+    
+   
+}
+.footer-heading {
+    font-size: 3rem;
+} 
+
 
 }
+
+    
+    
+
+    
+
+    
+
+
+
+                                                     /* THE END */
