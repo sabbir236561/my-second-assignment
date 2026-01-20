@@ -31,7 +31,7 @@ body {
     padding: 16px 200px;
 }
 
- .brand {
+.brand {
     max-width: 220px;
     font-size: 2.5rem;
     color: white;
@@ -72,6 +72,8 @@ body {
     padding: 12px 20px;
     border: none;
     border-radius: 10000px;
+    transition: transform 3s;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 
@@ -85,9 +87,21 @@ body {
     padding: 12px 20px;
     border: 1px solid #00FF88;
     border-radius: 10000px;
+    transition: transform 3s;
 }
 
-.twin-button img{
+  .btn-primary:hover {
+    width: 200px;
+    transform: rotate(360deg) scale(1) ;
+    background-color: green;
+}
+  .btn-secondary:hover {
+    width: 200px;
+    transform: rotate(360deg) scale(1) ;
+    
+}
+
+.twin-button img {
     vertical-align: middle;
 }
 
@@ -99,17 +113,17 @@ body {
 #banner {
     width: 100%;
     height: 100vh;
-     background-image: url("../images/hero-bg.png");
-    background-position:bottom;
+    background-image: url("../images/hero-bg.png");
+    background-position: bottom;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
-       
+
 }
 
 .banner-container {
-       display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -261,14 +275,16 @@ body {
     grid-row: span 2;
 }
 
-.mobile{
+.mobile {
     grid-column: span 2;
     grid-row: span 1;
 }
+
 .resource {
     grid-column: span 1;
     grid-row: span 1;
 }
+
 .interview {
     grid-column: span 2;
     grid-row: span 1;
@@ -337,10 +353,11 @@ body {
 
 /* host related design */
 
-.the-host{
-    padding-top:100px;
-    }
-.host{
+.the-host {
+    padding-top: 100px;
+}
+
+.host {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -349,75 +366,80 @@ body {
     border: none;
     border-radius: 40px;
 }
-.host .host-info{
+
+.host .host-info {
     display: flex;
     flex-direction: column;
     align-items: left;
 }
-.host img{
+
+.host img {
     padding-right: 24px;
 }
-.host-info h2{
+
+.host-info h2 {
     font-size: 2rem;
     font-weight: 600;
     color: #ffffff;
     margin-bottom: 0;
 }
-.host-info p{
-    
+
+.host-info p {
+
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
 }
 
-.icons img{
-   
-    padding:10px;
+.icons img {
+
+    padding: 10px;
     margin-right: 8px;
     box-sizing: border-box;
     border: 1px solid #533C72;
     border-radius: 10px;
-    
+
 }
 
 
 /* footer related styles */
 
 .footer-wrapper {
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-       background-image: url("../images/footer-bg.png");
-   background-size: cover;
+    background-image: url("../images/footer-bg.png");
+    background-size: cover;
 }
 
- .footer-heading {
-       font-size: 4.5rem;
+.footer-heading {
+    font-size: 4.5rem;
     color: white;
     -webkit-text-stroke: 1px none;
     margin: 0;
     padding-top: 70px;
-  
+
 }
 
-.footer-heading .footer-wave{
+.footer-heading .footer-wave {
     background: linear-gradient(#F7E93F, #FB09B4, #9100F8);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.footer-wrapper .icon{
-        margin-bottom: 32px;
+.footer-wrapper .icon {
+    margin-bottom: 32px;
 }
 
-.icon img{
+.icon img {
     vertical-align: middle;
     margin-right: 8px;
 }
-.icon a{
+
+.icon a {
     text-decoration: none;
     color: #ffffff;
     margin-left: 25px;
@@ -425,11 +447,11 @@ body {
 }
 
 
-.footer-wrapper p{
+.footer-wrapper p {
     margin-bottom: 0;
     font-size: 1rem;
     font-weight: 400;
-     color: #FFFFFF;
+    color: #FFFFFF;
     margin-bottom: 120px;
 
 }
