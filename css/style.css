@@ -280,17 +280,10 @@ body {
     grid-row: span 1;
 }
 
-.resource {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
 .interview {
     grid-column: span 2;
     grid-row: span 1;
 }
-
-
 
 /* featured episodes related design */
 
